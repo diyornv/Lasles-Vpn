@@ -6,11 +6,43 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">   
+        <style>
+            .font-rubik {
+              font-family: 'Rubik', sans-serif;
+            }
+          </style>   
 </head>
 <body>
-    <header class="container">
-        <nav class="flex">
-            <img src="./images/svg/logo.svg" alt="">
+    <header class="container mx-auto pt-12">
+        <nav class="flex justify-between items-center">
+            <div class="flex gap-[10px] items-center">
+                <img src="./images/svg/logo.svg" alt="">
+                <h1 class="font-rubik font-medium text-xl leading-6 text-[#0B132A]">Lasles<span class="font-bold">VPN</span></h1>
+            </div>
+            <div>
+                <ul class="flex gap-10 ">
+                    <li class="font-rubik leading-4 text-[#4F5665]">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="font-rubik leading-4 text-[#4F5665]">
+                        <a href="#">Features</a>
+                    </li>
+                    <li class="font-rubik leading-4 text-[#4F5665]">
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li class="font-rubik leading-4 text-[#4F5665]">
+                        <a href="#">Testimonials</a>
+                    </li>
+                    <li class="font-rubik leading-4 text-[#4F5665]">
+                        <a href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mr-[64px] flex gap-[30px]">
+                <button class="font-rubik font-medium text-[#0B132A] cursor-pointer">Sign In</button>
+                <button class="border py-4 px-10 rad border-[#F53855] rounded-full cursor-pointer">Sign Up</button>
+            </div>
         </nav>
     </header>
 </body>
